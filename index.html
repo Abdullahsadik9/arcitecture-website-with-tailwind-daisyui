@@ -30,7 +30,7 @@
           extend: {
             colors: {
               clifford: "#da373d",
-              bg_clr: "rgb(255, 255, 255),rgba(255, 255, 255, 0)",
+              btn_clr: "rgba(171, 239, 95, 0.2)",
             },
           },
         },
@@ -198,9 +198,11 @@
                 modern sophistication, featuring weathered wood, sleek metal
                 accents.
               </p>
-              <div class="lg:flex lg:gap-6 flex-row space-y-5">
+              <div class="lg:flex lg:gap-6 flex-row">
                 <!-- img-1 -->
-                <div class="text-left bg-white p-4 w-[250px] rounded-xl h-auto">
+                <div
+                  class="text-left bg-[#E7C1D3] p-4 w-[250px] rounded-xl h-auto"
+                >
                   <img src="img/concept.png" alt="" />
                   <h1 class="font-bold text-xl">Concept</h1>
                   <p>
@@ -210,7 +212,9 @@
                   </p>
                 </div>
                 <!-- img-2 -->
-                <div class="text-left bg-white p-4 w-[250px] rounded-xl h-auto">
+                <div
+                  class="text-left bg-[#EFDA6E] p-4 w-[250px] rounded-xl h-auto"
+                >
                   <img src="img/flow-chart.png" alt="" />
                   <h1 class="font-bold text-xl">Design Process</h1>
                   <p>
@@ -220,7 +224,9 @@
                   </p>
                 </div>
                 <!-- img-3 -->
-                <div class="text-left bg-white p-4 w-[250px] rounded-xl h-auto">
+                <div
+                  class="text-left bg-[#A4DAC3] p-4 w-[250px] rounded-xl h-auto"
+                >
                   <img src="img/vision.png" alt="" />
                   <h1 class="font-bold text-xl">Supervision</h1>
                   <p>
@@ -230,7 +236,9 @@
                   </p>
                 </div>
                 <!-- img-4 -->
-                <div class="text-left bg-white p-4 w-[250px] rounded-xl h-auto">
+                <div
+                  class="text-left bg-[#77AAEA] p-4 w-[250px] rounded-xl h-auto"
+                >
                   <img src="img/budget-planning.png" alt="" />
                   <h1 class="font-bold text-xl">Budget Planning</h1>
                   <p>
@@ -242,6 +250,109 @@
               </div>
             </div>
           </div>
+        </div>
+      </section>
+      <!-- Portfolio section -->
+      <section class="md:container mx-auto p-8">
+        <h1 class="font-bold text-center text-4xl">Our Latest Portfolio</h1>
+        <p class="text-center text-xs font-medium">
+          The barn house captivates with its blend of rustic charm and modern
+          sophistication, featuring weathered wood, sleek metal accents.
+        </p>
+        <div class="grid grid-cols-2 gap-5">
+          <div
+            class="flex gap-7 items-center w-[600px] border rounded-2xl px-6 py-4"
+          >
+            <img class="" src="img/img1.png" alt="" />
+            <div>
+              <h1 class="font-bold mb-1 text-2xl">Commercial</h1>
+              <p class="mb-1 text-[#737373]">
+                The barn house captivates with its blend of rustic charm and
+                modern. The barn house captivates with its blend of rustic charm
+                and modern
+              </p>
+              <a class="rounded-3xl font-bold"
+                >View Details
+                <i
+                  class="fa-solid fa-arrow-right bg-[#ABEF5F] text-white text-[12px] -rotate-45 rounded-full p-2"
+                ></i
+              ></a>
+            </div>
+          </div>
+          <img class="border p-4 rounded-2xl" src="img/img2.png" alt="" />
+          <img class="border p-4 rounded-2xl" src="img/img3.png" alt="" />
+          <div
+            class="flex gap-7 items-center w-[600px] border rounded-2xl px-6 py-4"
+          >
+            <img class="" src="img/img4.png" alt="" />
+            <div>
+              <h1 class="font-bold mb-1 text-2xl">Commercial</h1>
+              <p class="mb-1 text-[#737373]">
+                The barn house captivates with its blend of rustic charm and
+                modern. The barn house captivates with its blend of rustic charm
+                and modern
+              </p>
+              <a class="rounded-3xl font-bold"
+                >View Details
+                <i
+                  class="fa-solid fa-arrow-right bg-[#ABEF5F] text-white text-[12px] -rotate-45 rounded-full p-2"
+                ></i
+              ></a>
+            </div>
+          </div>
+          <img class="border p-4 rounded-2xl" src="img/img3.png" alt="" />
+        </div>
+      </section>
+      <!-- next project section -->
+      <section class="bg-[url('img/bg.jpg')] bg-cover h-screen">
+        <div class="text-center">
+          <button class="btn bg-btn_clr rounded-3xl py-1 mb-4 px-10 mt-5">
+            <i class="fa-solid fa-arrow-right text-center"></i>How we works
+          </button>
+          <h1 class="font-bold text-4xl mb-4">Let’s Discuss Next Project</h1>
+          <p class="text-xs font-medium mb-4">
+            The barn house captivates with its blend of rustic charm and modern
+            sophistication, featuring weathered wood, sleek metal accents.
+          </p>
+        </div>
+        <div class="text-center">
+          <div class="flex justify-center gap-7">
+            <input
+              class="rounded-2xl w-[24%] py-2 pl-2"
+              type="text"
+              placeholder="First Name"
+            />
+            <input
+              class="rounded-2xl w-[24%] py-2 pl-2"
+              type="text"
+              placeholder="Last Name"
+            />
+          </div>
+          <div class="flex justify-center gap-7 mt-4">
+            <input
+              class="rounded-2xl w-[24%] py-2 pl-2"
+              type="number"
+              placeholder="Phone Number"
+            />
+            <input
+              class="rounded-2xl w-[24%] py-2 pl-2"
+              type="email"
+              placeholder="Email Number"
+            />
+          </div>
+          <input
+            class="mt-4 w-1/2 pb-36 rounded-2xl pl-4 pt-4"
+            type="text"
+            placeholder="Write your message here"
+          />
+        </div>
+        <div class="text-center pt-6 mr-4">
+          <a class="btn ml-5 bg-[#ABEF5F] rounded-3xl w-6/12"
+            >Send Mail
+            <i
+              class="fa-solid fa-arrow-right bg-black text-white text-[12px] -rotate-45 rounded-full p-2"
+            ></i
+          ></a>
         </div>
       </section>
     </main>
