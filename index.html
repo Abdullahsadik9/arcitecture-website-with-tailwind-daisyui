@@ -46,12 +46,18 @@
     <header class="bg-base-200">
       <nav class="md:container mx-auto p-8">
         <div class="navbar">
-          <div class="navbar-start">
-            <div class="dropdown">
-              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+          <div class="navbar-start flex gap-48">
+            <div
+              class="dropdown border-3 rounded-full p-1 bg-[#E9E9E9] order-last"
+            >
+              <div
+                tabindex="0"
+                role="button"
+                class="btn rounded-full btn-ghost lg:hidden"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
+                  class="h-5 w-5 rounded-full"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -80,12 +86,12 @@
               </ul>
             </div>
 
-            <a class="text-3xl lg:flex lg:items-center lg:gap-1 font-bold">
+            <div class="flex items-center justify-center">
               <i
                 class="fa-solid fa-arrow-right text-[12px] -rotate-45 border rounded-full p-2 bg-[#ABEF5F]"
               ></i>
-              Rinterio</a
-            >
+              <a class="text-3xl pl-2 font-bold"> Rinterio</a>
+            </div>
           </div>
           <div class="navbar-center hidden lg:flex">
             <ul class="menu menu-horizontal px-1">
@@ -103,7 +109,7 @@
             <i
               class="fa-solid fa-cart-shopping border rounded-full p-2 ml-5 hidden lg:block"
             ></i>
-            <a class="btn ml-5 bg-[#ABEF5F] rounded-3xl"
+            <a class="btn ml-5 bg-[#ABEF5F] pt-2 rounded-3xl hidden lg:block"
               >Book Consult
               <i
                 class="fa-solid fa-arrow-right bg-black text-white text-[12px] -rotate-45 rounded-full p-2"
@@ -129,7 +135,7 @@
                 accents, and large windows that flood the space with natural
                 light.
               </p>
-              <a class="btn ml-5 bg-[#acef5fab] rounded-3xl"
+              <a class="btn ml-5 mb-20 bg-[#acef5fab] rounded-3xl"
                 >View Details
                 <i
                   class="fa-solid fa-arrow-right bg-[#ABEF5F] text-white text-[12px] -rotate-45 rounded-full p-2"
@@ -141,15 +147,15 @@
       </section>
     </header>
     <main>
-      <section class="relative mt-16">
-        <img class="absolute top-4" src="img/Vector.png" alt="" />
-        <div class="hero bg-base-200 min-h-screen pt-11">
-          <div class="hero-content flex-col lg:gap-10 lg:flex-row-reverse">
-            <img
-              src="img/Rectangle.png"
-              class="lg:w-2/4 rounded-lg shadow-2xl"
-            />
-            <div class="lg:w-1/2">
+      <section class="relative mt-16 mx-auto">
+        <img
+          class="absolute left-8 top-10 lg:block hidden"
+          src="img/Vector.png"
+          alt=""
+        />
+        <div class="bg-base-200 min-h-screen pt-24 p-7">
+          <div class="lg:flex lg:gap-7 lg:justify-center lg:w-11/12 mx-auto">
+            <div class="text-center lg:text-left">
               <button class="btn bg-white rounded-3xl py-1 mb-4 px-10">
                 <i class="fa-solid fa-arrow-right"></i>About Us
               </button>
@@ -165,7 +171,7 @@
               <!-- comercial -->
               <div class="flex bg-white rounded-xl gap-5 p-5 py-8">
                 <img src="img/commercial.png" alt="" />
-                <div>
+                <div class="text-left">
                   <h1 class="font-bold text-xl">Commercial</h1>
                   <p class="font-medium text-[#737373]">
                     The barn house captivates with its blend <br />
@@ -175,7 +181,7 @@
               </div>
               <div class="flex bg-white rounded-xl gap-5 p-5 mt-5 py-8">
                 <img src="img/residential.png" alt="" />
-                <div>
+                <div class="text-left">
                   <h1 class="font-bold text-xl">Residential</h1>
                   <p class="font-medium text-[#737373]">
                     The barn house captivates with its blend <br />
@@ -183,6 +189,12 @@
                   </p>
                 </div>
               </div>
+            </div>
+            <div>
+              <img
+                src="img/Rectangle.png"
+                class="rounded-lg lg:h-full lg:bg-cover lg:bg-center shadow-2xl"
+              />
             </div>
           </div>
         </div>
@@ -192,6 +204,11 @@
         <div class="hero bg-base-200 min-h-screen">
           <div class="hero-content text-center">
             <div class="">
+              <button
+                class="btn font-semibold bg-white rounded-3xl py-1 mb-4 px-10"
+              >
+                <i class="fa-solid fa-arrow-right"></i>How we works
+              </button>
               <h1 class="text-5xl font-bold">Our Works Process</h1>
               <p class="py-6">
                 The barn house captivates with its blend of rustic charm and
@@ -253,15 +270,26 @@
         </div>
       </section>
       <!-- Portfolio section -->
-      <section class="md:container mx-auto p-8">
-        <h1 class="font-bold text-center text-4xl">Our Latest Portfolio</h1>
-        <p class="text-center text-xs font-medium">
+      <section class="w-11/12 mx-auto p-8">
+        <div class="text-center">
+          <button
+            class="btn font-semibold bg-[#ABEF5F33] rounded-3xl py-1 mb-4 px-10"
+          >
+            <i class="fa-solid fa-arrow-right"></i>Explore our Latest works
+          </button>
+        </div>
+        <h1 class="font-bold text-center text-4xl mb-7">
+          Our Latest Portfolio
+        </h1>
+        <p class="text-center text-xs font-medium mb-7">
           The barn house captivates with its blend of rustic charm and modern
-          sophistication, featuring weathered wood, sleek metal accents.
+          sophistication, <br />
+          featuring weathered wood, sleek metal accents.
         </p>
-        <div class="grid grid-cols-2 gap-5">
+
+        <div class="lg:flex gap-5">
           <div
-            class="flex gap-7 items-center w-[600px] border rounded-2xl px-6 py-4"
+            class="flex gap-7 items-center w-3/4 border rounded-2xl px-6 py-4"
           >
             <img class="" src="img/img1.png" alt="" />
             <div>
@@ -280,9 +308,12 @@
             </div>
           </div>
           <img class="border p-4 rounded-2xl" src="img/img2.png" alt="" />
+        </div>
+
+        <div class="flex gap-5 mt-5">
           <img class="border p-4 rounded-2xl" src="img/img3.png" alt="" />
           <div
-            class="flex gap-7 items-center w-[600px] border rounded-2xl px-6 py-4"
+            class="flex gap-7 items-center w-2/3 border rounded-2xl px-6 py-4"
           >
             <img class="" src="img/img4.png" alt="" />
             <div>
@@ -359,21 +390,21 @@
     <footer class="bg-black">
       <div class="text-center">
         <a
-          class="text-3xl lg:flex lg:items-center lg:justify-center lg:gap-1 font-bold text-white"
+          class="text-3xl lg:flex lg:items-center lg:justify-center lg:gap-1 font-bold text-white mb-7 pt-20"
         >
           <i
             class="fa-solid fa-arrow-right text-[12px] -rotate-45 border rounded-full p-2 text-black bg-[#ABEF5F]"
-          ></i>
-          Rinterio</a
-        >
+          ></i
+          >Rinterio
+        </a>
 
-        <p class="text-[#737373]">
+        <p class="text-[#737373] mb-7">
           The barn house captivates with its blend of rustic charm and modern
           sophistication, featuring weathered wood, sleek metal accents.
         </p>
 
         <div
-          class="navbar-center hidden lg:flex text-[#E9E9E9] lg:justify-center"
+          class="navbar-center hidden lg:flex text-[#E9E9E9] lg:justify-center mb-7"
         >
           <ul class="menu menu-horizontal px-1">
             <li><a>Home</a></li>
@@ -384,7 +415,7 @@
           </ul>
         </div>
 
-        <a class="btn ml-5 bg-[#ABEF5F] border-none rounded-3xl"
+        <a class="btn ml-5 bg-[#ABEF5F] border-none rounded-3xl mb-20"
           >Book Consult
           <i
             class="fa-solid fa-arrow-right bg-black text-white text-[12px] -rotate-45 rounded-full p-2"
