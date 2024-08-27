@@ -50,45 +50,6 @@
             <div
               class="navbar-start bg-gradient-to-t from-[#c6c3c309] to-[#f0e1e11d] flex lg:gap-32 gap-40"
             >
-              <div
-                class="dropdown border-3 rounded-full p-1 bg-[#E9E9E9] order-last"
-              >
-                <div
-                  tabindex="0"
-                  role="button"
-                  class="btn rounded-full btn-ghost lg:hidden"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5 text-center rounded-full"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M4 6h16M4 12h8m-8 6h16"
-                    />
-                  </svg>
-                </div>
-                <ul
-                  tabindex="0"
-                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0 top-0"
-                >
-                  <li><a>Item 1</a></li>
-                  <li>
-                    <a>Parent</a>
-                    <ul class="p-2">
-                      <li><a>Submenu 1</a></li>
-                      <li><a>Submenu 2</a></li>
-                    </ul>
-                  </li>
-                  <li><a>Item 3</a></li>
-                </ul>
-              </div>
-
               <div class="flex items-center justify-center">
                 <i
                   class="fa-solid fa-arrow-right text-[12px] -rotate-45 border rounded-full p-2 bg-[#ABEF5F]"
@@ -118,6 +79,42 @@
                   class="fa-solid fa-arrow-right bg-black text-white text-[12px] -rotate-45 rounded-full p-2"
                 ></i
               ></a>
+            </div>
+            <div class="dropdown border-3 rounded-full p-1 bg-[#E9E9E9]">
+              <div
+                tabindex="0"
+                role="button"
+                class="btn rounded-full btn-ghost lg:hidden"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5 text-center rounded-full"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0 top-0"
+              >
+                <li><a>Item 1</a></li>
+                <li>
+                  <a>Parent</a>
+                  <ul class="p-2">
+                    <li><a>Submenu 1</a></li>
+                    <li><a>Submenu 2</a></li>
+                  </ul>
+                </li>
+                <li><a>Item 3</a></li>
+              </ul>
             </div>
           </div>
         </nav>
@@ -151,9 +148,7 @@
       </div>
     </header>
     <main>
-      <section
-        class="lg:mt-16 bg-gradient-to-t from-[#c6c3c309] to-[#f0e1e11d]"
-      >
+      <section class="lg:mt-16 bg-[#F4F4F4]">
         <div class="container mx-auto relative">
           <img
             class="absolute left-8 top-10 lg:block hidden"
@@ -162,7 +157,7 @@
           />
           <div class="pt-24 p-7">
             <div class="lg:flex lg:gap-7 lg:justify-center lg:w-11/12 mx-auto">
-              <div class="text-center lg:text-left">
+              <div class="text-center lg:text-left mb-6 sm:mb-0">
                 <button class="btn bg-white rounded-3xl py-1 mb-4 px-10">
                   <i class="fa-solid fa-arrow-right"></i>About Us
                 </button>
